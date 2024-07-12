@@ -54,7 +54,7 @@ ingress:
     nginx.ingress.kubernetes.io/rewrite-target: /
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: "hello-arc.testapp.com"
+    - host: "hello-arc2.testapp.com"
       paths:
         - path: /
           pathType: ImplementationSpecific
