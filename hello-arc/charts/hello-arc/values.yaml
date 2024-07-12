@@ -57,12 +57,12 @@ ingress:
     - host: "hello-arc2.testapp.com"
       paths:
         - path: /
-          pathType: ImplementationSpecific
+          pathType: Prefix
           backend:
              service:
                 name: hello-arc
                 port:
-                  number: 8080
+                  number: 80
   # tls: []
   #  - secretName: chart-example-tls
   #    hosts:
