@@ -34,23 +34,3 @@ spec:
         env:
         - name: MESSAGE
           value: Welcome to Azure Arc GitOps Demo!
----
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: hello-arc-ingress
-  namespace: hello-arc
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
-spec:
-  rules:
-  - host: "hello-arc.testapp.com"
-    http:
-      paths:
-      - pathType: Prefix
-        path: "/"
-        backend:
-          service:
-            name: hello-arc
-            port:
-              number: 80
