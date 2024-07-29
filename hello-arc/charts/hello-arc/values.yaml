@@ -54,7 +54,7 @@ ingress:
     nginx.ingress.kubernetes.io/rewrite-target: /
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: "hello-arc.testapp.com"
+    - host: "arc-test-helloworld.testapp.com"
       paths:
         - path: /
           pathType: Prefix
